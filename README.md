@@ -55,3 +55,49 @@ python main.py
 
 Then open your browser and go to:
 👉 http://127.0.0.1:5000/
+
+🧠 Key Features
+
+✅ User authentication and role-based access
+✅ Event creation, editing, and deletion
+✅ Category-based event filtering
+✅ Real-time event status updates (Open, Sold Out, Inactive)
+✅ Comment system for user interaction
+✅ Booking system with capacity checks
+✅ Booking history view for users
+✅ Responsive and mobile-friendly UI
+
+🗂️ Repository Structure
+```bash
+IAB207_A3/
+├── Sportify/                   # Main Flask application package
+│   ├── static/                 # CSS, images, and static assets
+│   ├── templates/              # HTML templates using Bootstrap
+│   ├── __init__.py             # Flask app factory and configuration
+│   ├── auth.py                 # Handles user login, registration, and authentication
+│   ├── event.py                # Event creation, editing, and booking routes
+│   ├── forms.py                # WTForms classes for user input validation
+│   ├── models.py               # SQLAlchemy database models
+│   └── views.py                # Core routes for homepage and general pages
+├── instance/                   # Contains the SQLite database
+├── create_db.py                # Script to initialize the database
+├── main.py                     # Entry point to run the application
+├── requirements.txt            # List of dependencies
+└── README.md                   # Project documentation
+```
+
+💡 Future Improvements
+
+Add admin dashboard for event moderation
+
+Implement notification emails for bookings
+
+Integrate Google Maps API for event locations
+
+Enhance UI/UX with interactive calendar views
+
+## 📫 Contact
+
+- **Email:** [mutahhar.you@gmail.com](mailto:mutahhar.you@gmail.com)  
+- **LinkedIn:** [Mutahher Naseer](https://www.linkedin.com/in/mutahher-naseer-30778b220)
+
