@@ -5,7 +5,7 @@ A Flask-based event management platform for creating, booking, and exploring eve
 👥 Authors
 
 Mutahher Naseer, Justin Lee, Kalifin Foot, and A. Garg
-Developed for IAB207 Web Application Design (Group 28)
+Developed for IAB207 Web Application Design(QUT) (Group 28)
 
 🧩 Overview
 
@@ -37,7 +37,8 @@ Utilities	Email Validator, Bootstrap-Flask
 🚀 Installation & Setup
 
 1. Clone the repository
-```bashgit clone https://github.com/Vivid809/IAB207_A3.git
+```bash
+git clone https://github.com/Vivid809/IAB207_A3.git
 cd IAB207_A3
 ```
 2. Install dependencies
@@ -71,7 +72,7 @@ Then open your browser and go to:
 ```bash
 IAB207_A3/
 ├── Sportify/                   # Main Flask application package
-│   ├── static/                 # CSS, images, and static assets
+│   ├── static/                 # CSS, JS, and static assets
 │   ├── templates/              # HTML templates using Bootstrap
 │   ├── __init__.py             # Flask app factory and configuration
 │   ├── auth.py                 # Handles user login, registration, and authentication
@@ -79,11 +80,17 @@ IAB207_A3/
 │   ├── forms.py                # WTForms classes for user input validation
 │   ├── models.py               # SQLAlchemy database models
 │   └── views.py                # Core routes for homepage and general pages
-├── instance/                   # Contains the SQLite database
-├── create_db.py                # Script to initialize the database
+│
+├── instance/                   # Database folder (auto-created by Flask)
+│   └── sitedata.sqlite         # SQLite database file
+│
+├── create_db.py                # Script to initialize and seed the database
 ├── main.py                     # Entry point to run the application
-├── requirements.txt            # List of dependencies
+├── output.txt                  # Optional output log or debugging file
+├── requirements.txt            # Python dependencies list
+├── .gitignore                  # Files and folders excluded from git
 └── README.md                   # Project documentation
+
 ```
 
 💡 Future Improvements
@@ -95,6 +102,11 @@ Implement notification emails for bookings
 Integrate Google Maps API for event locations
 
 Enhance UI/UX with interactive calendar views
+
+⚠️ Deployment Notice
+
+This project currently runs locally via Flask and SQLite for demonstration and educational purposes.
+No active server deployment is maintained — setup instructions above replicate the development environment.
 
 ## 📫 Contact
 
